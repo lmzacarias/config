@@ -1,0 +1,43 @@
+configurar mongo en linux 
+cd /var/lib/mongodb/
+cd /etc/apt/sources.list.d/
+ls
+sudo apt-get update
+ls -la
+sudo apt-get autoremove
+ls -la
+rm mongodb-org-4.2.list
+sudo rm mongo-org-4.2.list
+sudo apt-get update
+
+install mongo 
+
+referenciado de la documentacion de mongo
+----------------------------------------
+wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+sudo apt-get install gnupg
+wget -qO - https://www.mongodb.org/static/pgp/server-4.2.asc | sudo apt-key add -
+echo "deb [ arch=amd64,arm64 ] https://repo.mongodb.org/apt/ubuntu bionic/mongodb-org/4.2 multiverse" | sudo tee /etc/apt/sources.list.d/mongodb-org-4.2.list
+sudo apt-get update
+sudo apt-get install -y mongodb-org
+
+
+corregir error al correr mongo 
+----------------------------------
+
+cd /tmp/
+ls -la
+cd /var/lib/
+ls -la
+cd mongodb/
+ls -la
+nano /etc/mongod.config
+ cat /var/log/mongodb/mongod.log
+cd /tmp/
+ls -la
+chown mongodb:mongodb mongodb-27017.sock    // cambia los permisos de root a mongo 
+
+sudo chown mongodb:mongodb mongodb-27017.sock 
+sudo service mongodb stop
+sudo systemctl unmask mongod
+sudo service mongodb start
