@@ -41,9 +41,14 @@ sudo chown mongodb:mongodb mongodb-27017.sock
 sudo service mongodb stop
 sudo systemctl unmask mongod
 sudo service mongodb start
+
 arreglar el error de coneccon de mongo 
 sudo rm /var/lib/mongodb/mongod.lock
 sudo mongod --dbpath /var/lib/mongodb/ --repair
 sudo mongod --dbpath /var/lib/mongodb/ --journal
+
+correr el proyecto
+sh startApp.sh
+
 
 
