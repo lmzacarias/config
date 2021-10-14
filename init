@@ -43,6 +43,7 @@ sudo systemctl unmask mongod
 sudo service mongodb start
 
 arreglar el error de coneccon de mongo 
+---------------------------------------------------
 sudo rm /var/lib/mongodb/mongod.lock
 sudo mongod --dbpath /var/lib/mongodb/ --repair
 sudo mongod --dbpath /var/lib/mongodb/ --journal
@@ -50,7 +51,11 @@ sudo mongod --dbpath /var/lib/mongodb/ --journal
 correr el proyecto
 sh startApp.sh
 
+--------------------------------------------------------
 
+instalar html to pdf 
+wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb
+sudo apt install ./wkhtmltox_0.12.6-1.focal_amd64.deb
 
 
 refactor
