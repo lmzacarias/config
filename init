@@ -52,6 +52,12 @@ correr el proyecto
 sh startApp.sh
 
 --------------------------------------------------------
+correr el test de migraciones 
+
+nodemon run_test.js migrations/deltas/0355_year_structure_academica_soluciones_integrales_2021_2022/deltatest.js 
+-----------------------------------------------------------
+
+
 
 instalar html to pdf 
 wget https://github.com/wkhtmltopdf/packaging/releases/download/0.12.6-1/wkhtmltox_0.12.6-1.focal_amd64.deb
