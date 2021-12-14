@@ -56,6 +56,9 @@ correr el test de migraciones
 
 nodemon run_test.js /migrations/deltas/0356_edit_year_structure_academica_soluciones_integrales_2021_2022/deltatest.js 
 -----------------------------------------------------------
+console pretty
+JSON.stringify(changes, null, 4)
+
 
 
 
