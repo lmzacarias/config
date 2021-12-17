@@ -51,6 +51,8 @@ sudo mongod --dbpath /var/lib/mongodb/ --journal
 correr el proyecto
 sh startApp.sh
 
+sh launchProductionApp.sh 
+
 --------------------------------------------------------
 correr el test de migraciones 
 
