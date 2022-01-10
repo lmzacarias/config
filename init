@@ -48,6 +48,12 @@ sudo rm /var/lib/mongodb/mongod.lock
 sudo mongod --dbpath /var/lib/mongodb/ --repair
 sudo mongod --dbpath /var/lib/mongodb/ --journal
 
+---------------------------------------------
+commit con la config correcta
+git checkout 80fcd0b87223caaad9cda707d828fbb857c1a484
+
+
+
 correr el proyecto
 sh startApp.sh
 
