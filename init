@@ -68,6 +68,16 @@ console pretty
 JSON.stringify(changes, null, 4)
 
 
+# Ver y descargar Ramas remotas
+git branch -a
+# * master
+#   remotes/origin/HEAD -> origin/master
+#   remotes/origin/baremacion
+#   remotes/origin/bootstrap
+#   remotes/origin/fallo_registro
+#   remotes/origin/master
+
+git checkout -b baremacion remotes/origin/baremacion
 
 
 instalar html to pdf 
