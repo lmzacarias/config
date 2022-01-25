@@ -98,3 +98,5 @@ school tienen todos
 school year algunos
 
 
+// {$setOnInsert: task_to_migrate}, {upsert: true}
+
