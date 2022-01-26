@@ -100,3 +100,11 @@ school year algunos
 
 // {$setOnInsert: task_to_migrate}, {upsert: true}
 
+consulta de objetos con mas de un elemento
+
+db.getCollection('tasks').find({$nor: [
+    {attachments: {$exists: false}},
+    {attachments: {$size: 0}},
+    {attachments: {$size: 1}}
+]})
+
